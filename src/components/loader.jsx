@@ -1,6 +1,6 @@
 import React from 'react';
 import './Loader.css';
-import planeLogo from './logo.png';
+import planeLogo from '../assets/logo_Plane.png';
 
 const Loader = () => (
   <div className="loader-body">
@@ -20,7 +20,7 @@ const Loader = () => (
     </div>
 
     {/* Text */}
-    
+
   </div>
 );
 
