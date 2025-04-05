@@ -1,6 +1,6 @@
 import React from 'react';
 import './Loader.css';
-import planeLogo from './logo.png';
+import planeLogo from './logo_loader.png';
 
 const Loader = () => (
   <div className="loader-body">
