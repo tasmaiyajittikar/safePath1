@@ -1,0 +1,195 @@
+/* LandingPage.css */
+
+/* General layout for centering */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1c40f;
+    /* Set main background color */
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    /* Make the header take full width */
+    max-width: 1200px;
+    /* Limit max width for larger screens */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* Ensure the logo text stands out */
+}
+
+.settings-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    /* Ensure icon is visible */
+    cursor: pointer;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1c40f;
+    color: black;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 60px;
+}
+
+
+/* Form and content container */
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+
+    /* Center the form and restrict its width */
+    background-color: #ecf0f1;
+    /* Form background to make fields stand out */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    /* Dark text for good contrast */
+}
+
+/* Styling for the input field */
+input {
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+/* Button styling */
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #b0b0b0;
+}
+
+/* Loading text */
+.loading-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .settings-btn {
+        font-size: 20px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input {
+        max-width: 90%;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
+}
+
+/* Very small screens (portrait mobile) */
+@media (max-width: 480px) {
+
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .settings-btn {
+        font-size: 22px;
+        align-self: flex-end;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    button {
+        padding: 12px 30px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}

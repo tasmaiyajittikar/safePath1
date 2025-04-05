@@ -1,0 +1,48 @@
+.loader-body {
+    background-color: #f1c40f;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.plane-svg {
+    animation: fly 1.5s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.loader-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
