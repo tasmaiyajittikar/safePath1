@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './LandingPage.css'; // Import the CSS file
 import LanguageModal from './LanguageModal'; // Language modal for language selection
 import logo from '../assets/logo.png';
+import { Link } from 'react-router-dom';
 
 function LandingPage() {
     const [language, setLanguage] = useState(null);
@@ -56,9 +57,9 @@ function LandingPage() {
                     onChange={(e) => setFlightNumber(e.target.value)}
                 />
 
-                <button onClick={handleSubmit} disabled={loading}>
+                <Link to="/map" onClick={handleSubmit} disabled={loading}>
                     {loading ? 'Loading...' : 'Guide Me'}
-                </button>
+                </Link>
 
                 {loading && <div className="loading-text">Fetching flight details...</div>}
 
