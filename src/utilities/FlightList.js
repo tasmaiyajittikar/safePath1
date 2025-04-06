@@ -1,6 +1,5 @@
 // FlightList.js
 
-import React, { useState } from 'react';
 import axios from 'axios';
 
 export const fetchFlights = async (flightNumber) => {
@@ -19,6 +18,8 @@ export const fetchFlights = async (flightNumber) => {
         limit: 5,
       }
     });
+
+    console.log(response)
 
     return response.data.data.map(flight => ({
       flight_number: flight.flight?.iata || "N/A",

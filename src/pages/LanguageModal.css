@@ -23,6 +23,7 @@
     text-align: center;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Language Select */
@@ -35,6 +36,7 @@
     font-size: 16px;
     background-color: #ffffff;
     color: #000;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Submit Button */

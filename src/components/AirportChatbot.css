@@ -1,0 +1,340 @@
+/* Chatbot Container */
+.chatbot-container {
+    background-color: #f3f4f6;
+    /* bg-gray-100 */
+    padding: 16px;
+    /* p-4 */
+    min-height: 100%;
+    /* min-h-screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chatbot Window */
+.chatbot-window {
+    background-color: #ffffff;
+    /* bg-white */
+    width: 100%;
+    max-width: 450px;
+    /* max-w-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* shadow-md */
+    border-radius: 8px;
+    /* rounded-lg */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Chatbox */
+.chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 16px;
+    /* p-4 */
+    max-height: 500px;
+    /* maxHeight from inline style */
+}
+
+/* Message Styling */
+.message {
+    margin-bottom: 8px;
+    /* mb-2 */
+}
+
+.bot-message {
+    text-align: left;
+    /* text-left */
+}
+
+.user-message {
+    text-align: right;
+    /* text-right */
+}
+
+.message-text {
+    display: inline-block;
+    padding: 8px 16px;
+    /* px-4 py-2 */
+    border-radius: 8px;
+    /* rounded-lg */
+}
+
+.bot-message .message-text {
+    background-color: #dbeafe;
+    /* bg-blue-100 */
+    color: #1e3a8a;
+    /* text-blue-900 */
+}
+
+.user-message .message-text {
+    background-color: #dcfce7;
+    /* bg-green-100 */
+    color: #166534;
+    /* text-green-900 */
+}
+
+/* Options Container */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    /* space-x-4 */
+    margin: 16px 0;
+    /* my-4 */
+}
+
+/* Option Buttons */
+.option-button {
+    padding: 8px 16px;
+    /* px-4 py-2 */
+    color: #ffffff;
+    /* text-white */
+    border: none;
+    border-radius: 8px;
+    /* rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.yes-button,
+.next-button {
+    background-color: #3b82f6;
+    /* bg-blue-500 */
+}
+
+.yes-button:hover,
+.next-button:hover {
+    background-color: #2563eb;
+    /* hover:bg-blue-600 */
+}
+
+.no-button,
+.help-button {
+    background-color: #6b7280;
+    /* bg-gray-500 */
+}
+
+.no-button:hover,
+.help-button:hover {
+    background-color: #4b5563;
+    /* hover:bg-gray-600 */
+}
+
+/* Input Form */
+.input-form {
+    display: flex;
+    padding: 16px;
+    /* p-4 */
+    border-top: 1px solid #d1d5db;
+    /* border-t border-gray-300 */
+}
+
+/* Input Field */
+.input-field {
+    flex-grow: 1;
+    padding: 8px;
+    /* p-2 */
+    border: 1px solid #d1d5db;
+    /* border border-gray-300 */
+    border-radius: 8px 0 0 8px;
+    /* rounded-l-lg */
+    outline: none;
+}
+
+.input-field::placeholder {
+    color: #9ca3af;
+    /* Placeholder text color */
+}
+
+/* Send Button */
+.send-button {
+    background-color: #3b82f6;
+    /* bg-blue-500 */
+    color: #ffffff;
+    /* text-white */
+    padding: 8px 16px;
+    /* px-4 py-2 */
+    border: none;
+    border-radius: 0 8px 8px 0;
+    /* rounded-r-lg */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #2563eb;
+    /* hover:bg-blue-600 */
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    background-color: #f3f4f6;
+    /* bg-gray-100 */
+    padding: 16px;
+    /* p-4 */
+    min-height: 100%;
+    /* min-h-screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Chatbot Window */
+.chatbot-window {
+    background-color: #ffffff;
+    /* bg-white */
+    width: 100%;
+    max-width: 450px;
+    /* max-w-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* shadow-md */
+    border-radius: 8px;
+    /* rounded-lg */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Chatbox */
+.chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 16px;
+    /* p-4 */
+    max-height: 500px;
+    /* maxHeight from inline style */
+}
+
+/* Message Styling */
+.message {
+    margin-bottom: 8px;
+    /* mb-2 */
+}
+
+.bot-message {
+    text-align: left;
+    /* text-left */
+}
+
+.user-message {
+    text-align: right;
+    /* text-right */
+}
+
+.message-text {
+    display: inline-block;
+    padding: 8px 16px;
+    /* px-4 py-2 */
+    border-radius: 8px;
+    /* rounded-lg */
+}
+
+.bot-message .message-text {
+    background-color: #dbeafe;
+    /* bg-blue-100 */
+    color: #1e3a8a;
+    /* text-blue-900 */
+}
+
+.user-message .message-text {
+    background-color: #dcfce7;
+    /* bg-green-100 */
+    color: #166534;
+    /* text-green-900 */
+}
+
+/* Options Container */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    /* space-x-4 */
+    margin: 16px 0;
+    /* my-4 */
+}
+
+/* Option Buttons */
+.option-button {
+    padding: 8px 16px;
+    /* px-4 py-2 */
+    color: #ffffff;
+    /* text-white */
+    border: none;
+    border-radius: 8px;
+    /* rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.yes-button,
+.next-button {
+    background-color: #3b82f6;
+    /* bg-blue-500 */
+}
+
+.yes-button:hover,
+.next-button:hover {
+    background-color: #2563eb;
+    /* hover:bg-blue-600 */
+}
+
+.no-button,
+.help-button {
+    background-color: #6b7280;
+    /* bg-gray-500 */
+}
+
+.no-button:hover,
+.help-button:hover {
+    background-color: #4b5563;
+    /* hover:bg-gray-600 */
+}
+
+/* Input Form */
+.input-form {
+    display: flex;
+    padding: 16px;
+    /* p-4 */
+    border-top: 1px solid #d1d5db;
+    /* border-t border-gray-300 */
+}
+
+/* Input Field */
+.input-field {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    height: 32px;
+    /* Increased to align with button */
+    font-size: 14px;
+}
+
+.input-field::placeholder {
+    color: #9ca3af;
+}
+
+/* Send Button */
+.send-button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    /* Consistent height with input */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button:hover {
+    background-color: #2563eb;
+}

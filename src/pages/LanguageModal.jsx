@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import './LanguageModal.css'; // Import the CSS file
+
+import React, { useState } from "react";
+import "./LanguageModal.css";
 
 const LanguageModal = ({ onClose, onSelectLanguage }) => {
-    const [selectedLanguage, setSelectedLanguage] = useState('en');
+    const [selectedLanguage, setSelectedLanguage] = useState("en"); // Default to English
 
     const handleLanguageChange = (e) => {
         setSelectedLanguage(e.target.value);
@@ -10,7 +11,7 @@ const LanguageModal = ({ onClose, onSelectLanguage }) => {
 
     const handleSubmit = () => {
         onSelectLanguage(selectedLanguage); // Pass selected language to parent
-        onClose(); // Close the modal after selecting the language
+        onClose(); // Close the modal
     };
 
     return (
@@ -23,11 +24,12 @@ const LanguageModal = ({ onClose, onSelectLanguage }) => {
                     className="language-select"
                 >
                     <option value="en">English</option>
-                    <option value="es">Hindi</option>
-                    <option value="fr">Spanish</option>
-                    {/* Add more languages if needed */}
+                    <option value="es">Spanish</option>
+                    <option value="hi">Hindi</option>
                 </select>
-                <button onClick={handleSubmit} className="submit-button">Submit</button>
+                <button onClick={handleSubmit} className="submit-button">
+                    Submit
+                </button>
             </div>
         </div>
     );
